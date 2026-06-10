@@ -27,7 +27,7 @@
         "image": "/images/heritage/GreatExhibition.jpg",
         "color": "#9c9d9f",
         "placement": "top-left",
-        "text": "When the Great Exhibition opened in Hyde Park in 1851, six million visitors came to see what Continental industry could produce. Inventors and manufacturers exhibited beneath Joseph Paxton's Crystal Palace, a building that was itself a demonstration of prefabricated engineering.\n\nThe exhibition was a wager that progress could be displayed, compared, and sold. Steam engines, textile machinery, and precision instruments competed for attention alongside the nations that built them."
+        "text": "When the Great Exhibition opened in Hyde Park in 1851, six million visitors came to see what European industry could produce. Inventors and manufacturers exhibited beneath Joseph Paxton's Crystal Palace, a building that was itself a demonstration of prefabricated engineering.\n\nThe exhibition was a wager that progress could be displayed, compared, and sold. Steam engines, textile machinery, and precision instruments competed for attention alongside the nations that built them."
       },
       {
         "id": "faraday",
@@ -62,7 +62,7 @@
         "image": "/images/heritage/TheApprentice.jpg",
         "color": "#493e30",
         "placement": "center-right",
-        "text": "Before the factory system spread, Continental industry grew through apprenticeship, with masters recruiting students, teaching by demonstration, and correcting by hand. The knowledge that mattered could not be written down easily: when metal was ready, how a joint should feel, how hard to strike.\n\nPost industrialisation, steam and steel still needed men formed over years in the workshop. Precision manufacturing remained reliant on trained skill."
+        "text": "Before the factory system spread, European industry grew through apprenticeship, with masters recruiting students, teaching by demonstration, and correcting by hand. The knowledge that mattered could not be written down easily: when metal was ready, how a joint should feel, how hard to strike.\n\nPost industrialisation, steam and steel still needed men formed over years in the workshop. Precision manufacturing remained reliant on trained skill."
       },
       {
         "id": "brunel",
@@ -76,14 +76,14 @@
         "image": "/images/heritage/europeana__285_gam4192.jpg",
         "color": "#404040",
         "placement": "bottom-right",
-        "text": "Before dedicated research institutes, much Continental science happened in rooms like this: apothecary shops where balances, glassware, and calibrated preparations turned chemical theory into measured practice.\n\nThe pharmacist was part merchant, part experimenter. Knowledge was tested at the bench and sold across the counter."
+        "text": "Before dedicated research institutes, much European science happened in rooms like this: apothecary shops where balances, glassware, and calibrated preparations turned chemical theory into measured practice.\n\nThe pharmacist was part merchant, part experimenter. Knowledge was tested at the bench and sold across the counter."
       },
       {
         "id": "zielezinski",
         "image": "/images/heritage/europeana__0940415__nn09S3R.jpg",
         "color": "#7e786d",
         "placement": "center-left",
-        "text": "In Warsaw, a locksmith workshop took on a major public commission, forging ornamental iron grates section by section, with dozens of craftsmen working at anvils simultaneously. This was how much of Continental metalwork was still organised in the nineteenth century: coordinated labour, not mass production lines.\n\nWorkshops of this kind remained the backbone of urban industry well into the age of steam and steel, in places where design, metallurgy, and commerce met in a single room."
+        "text": "In Warsaw, a locksmith workshop took on a major public commission, forging ornamental iron grates section by section, with dozens of craftsmen working at anvils simultaneously. This was how much of European metalwork was still organised in the nineteenth century: coordinated labour, not mass production lines.\n\nWorkshops of this kind remained the backbone of urban industry well into the age of steam and steel, in places where design, metallurgy, and commerce met in a single room."
       }
     ],
     "team": [

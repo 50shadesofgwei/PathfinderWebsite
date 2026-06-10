@@ -42,7 +42,7 @@ He turned physiology into a universal discipline; a generation of researchers fo
 - **Image:** `GreatExhibition.jpg`
 - **Placement:** top-left
 
-When the Great Exhibition opened in Hyde Park in 1851, six million visitors came to see what Continental industry could produce. Inventors and manufacturers exhibited beneath Joseph Paxton's Crystal Palace, a building that was itself a demonstration of prefabricated engineering.
+When the Great Exhibition opened in Hyde Park in 1851, six million visitors came to see what European industry could produce. Inventors and manufacturers exhibited beneath Joseph Paxton's Crystal Palace, a building that was itself a demonstration of prefabricated engineering.
 
 The exhibition was a wager that progress could be displayed, compared, and sold. Steam engines, textile machinery, and precision instruments competed for attention alongside the nations that built them.
 
@@ -102,7 +102,7 @@ This was thermodynamics turned into enterprise: converting fuel into work at sca
 - **Image:** `TheApprentice.jpg`
 - **Placement:** center-right
 
-Before the factory system spread, Continental industry grew through apprenticeship, with masters recruiting students, teaching by demonstration, and correcting by hand. The knowledge that mattered could not be written down easily: when metal was ready, how a joint should feel, how hard to strike.
+Before the factory system spread, European industry grew through apprenticeship, with masters recruiting students, teaching by demonstration, and correcting by hand. The knowledge that mattered could not be written down easily: when metal was ready, how a joint should feel, how hard to strike.
 
 Post industrialisation, steam and steel still needed men formed over years in the workshop. Precision manufacturing remained reliant on trained skill.
 
@@ -126,7 +126,7 @@ From the Great Western Railway to the Thames Tunnel and the Clifton Suspension B
 - **Image:** `europeana__285_gam4192.jpg`
 - **Placement:** bottom-right
 
-Before dedicated research institutes, much Continental science happened in rooms like this: apothecary shops where balances, glassware, and calibrated preparations turned chemical theory into measured practice.
+Before dedicated research institutes, much European science happened in rooms like this: apothecary shops where balances, glassware, and calibrated preparations turned chemical theory into measured practice.
 
 The pharmacist was part merchant, part experimenter. Knowledge was tested at the bench and sold across the counter.
 
@@ -138,6 +138,6 @@ The pharmacist was part merchant, part experimenter. Knowledge was tested at the
 - **Image:** `europeana__0940415__nn09S3R.jpg`
 - **Placement:** center-left
 
-In Warsaw, a locksmith workshop took on a major public commission, forging ornamental iron grates section by section, with dozens of craftsmen working at anvils simultaneously. This was how much of Continental metalwork was still organised in the nineteenth century: coordinated labour, not mass production lines.
+In Warsaw, a locksmith workshop took on a major public commission, forging ornamental iron grates section by section, with dozens of craftsmen working at anvils simultaneously. This was how much of European metalwork was still organised in the nineteenth century: coordinated labour, not mass production lines.
 
 Workshops of this kind remained the backbone of urban industry well into the age of steam and steel, in places where design, metallurgy, and commerce met in a single room.

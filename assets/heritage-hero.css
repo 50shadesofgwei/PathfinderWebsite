@@ -78,7 +78,7 @@ body.page-with-backdrop::before {
 .heritage-page__content {
   position: absolute;
   z-index: 2;
-  left: clamp(1.25rem, 4vw, 3rem);
+  left: 50%;
   right: auto;
   top: clamp(8.5rem, 20vh, 11rem);
   bottom: auto;
@@ -86,6 +86,7 @@ body.page-with-backdrop::before {
   max-width: var(--maxw);
   max-height: calc(100dvh - clamp(8.5rem, 20vh, 11rem) - 1.5rem);
   margin: 0;
+  transform: translateX(-50%);
   padding: 1.1rem 1.35rem;
   overflow: hidden;
   background: transparent;
