@@ -48,7 +48,7 @@
         "image": "/images/heritage/SteelWorks.jpg",
         "color": "#666666",
         "placement": "top-left",
-        "text": "The Bessemer converter, patented in 1856, made cheap steel possible by blowing air through molten pig iron to burn away impurities. Entrepreneurs who adopted it built steelworks that poured metal from overhead ladles.\n\nThe arrival of cheap and high quality steel reshaped Europe's cities, railways, and shipyards; engineers could dream up and build designs that wrought iron alone could not support. Previously unthinkable infrastructural plans suddenly became feasible."
+        "text": "The Bessemer converter, patented in 1856 in England, made cheap steel possible by blowing air through molten pig iron to burn away impurities. Entrepreneurs who adopted it built steelworks that poured metal from overhead ladles.\n\nThe arrival of cheap and high quality steel reshaped Europe's cities, railways, and shipyards; engineers could dream up and build designs that wrought iron alone could not support. Previously unthinkable infrastructural plans suddenly became feasible."
       },
       {
         "id": "smokestacks",
@@ -88,9 +88,9 @@
     ],
     "team": [
       {
-        "id": "steel",
-        "image": "/images/heritage/steel.jpg",
-        "color": "#939393"
+        "id": "team",
+        "image": "/images/Team.jpg",
+        "color": "#7a746f"
       }
     ],
     "news": [
