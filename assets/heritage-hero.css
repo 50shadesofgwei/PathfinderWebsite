@@ -318,6 +318,31 @@ body.page-with-backdrop::before {
   -ms-overflow-style: none;
 }
 
+.page-mission .heritage-page__content {
+  width: min(38rem, calc(100% - 2 * var(--spacing-lg)));
+  top: clamp(8.5rem, 20vh, 11rem);
+  bottom: clamp(1rem, 3vh, 1.5rem);
+  max-height: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1.35rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.page-mission .heritage-page__content::-webkit-scrollbar {
+  display: none;
+}
+
+.page-mission .heritage-page__content main {
+  font-size: clamp(1.08rem, 1.85vw, 1.4rem);
+  line-height: 1.48;
+}
+
+.page-mission .heritage-page__content main p {
+  margin: 0.5em 0;
+}
+
 .heritage-page__content:has(.news-list)::-webkit-scrollbar {
   display: none;
 }
