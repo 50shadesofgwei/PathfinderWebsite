@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/images/Kasparov.jpeg" type="image/jpeg" />
+  <title>Pathfinder Quantum Technologies - News</title>
+  <script>
+    (function(){
+      try{
+        var saved = localStorage.getItem("theme");
+        var sys = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var theme = saved || sys || "dark";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      }catch(e){}
+    })();
+  </script>
+  <link rel="stylesheet" href="/assets/theme.css" />
+  <link rel="stylesheet" href="/assets/heritage-hero.css" />
+</head>
+<body class="page-with-backdrop">
+  <section class="heritage-page">
+    <div id="heritageHero" class="heritage-hero heritage-hero--backdrop" data-mode="backdrop" data-carousel="news" aria-hidden="true">
+      <div class="heritage-hero__visual">
+        <div class="heritage-hero__slide heritage-hero__slide--a"></div>
+        <div class="heritage-hero__slide heritage-hero__slide--b"></div>
+        <div class="heritage-hero__tint"></div>
+        <div class="heritage-hero__scrim"></div>
+      </div>
+    </div>
+    <script src="/assets/heritage-boot.js"></script>
+
+    <header class="heritage-hero__header">
+      <h1>Pathfinder Quantum Technologies</h1>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a><span class="sep">&middot;</span>
+        <a href="mission.html">Mission</a><span class="sep">&middot;</span>
+        <a href="team.html">Team</a><span class="sep">&middot;</span>
+        <a href="news.html" aria-current="page"><b>News</b></a><span class="sep">&middot;</span>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="heritage-page__content">
+      <main>
+        <section>
+          <div class="news-list">
+            <article class="news-card">
+              <div class="news-content">
+                <p class="news-date">31 May 2026</p>
+                <h3 class="news-headline">PIC Ion Chip Design Released</h3>
+                <p class="news-body">The first integrated layout for Pathfinder&rsquo;s photonic ion-trap chip on <sup>138</sup>Ba<sup>+</sup>: waveguide routing, on-chip collection optics, and the material stack. The <a href="/outreach/pic_chip_paper/paper.pdf">write-up</a> and <a href="https://github.com/50shadesofgwei/pathfinder-pic-ion-chip">CAD design</a> of the model are now publicly available.</p>
+              </div>
+              <div class="news-photo">
+                <img src="/images/news/design-image.png" alt="Pathfinder PIC ion chip design" />
+              </div>
+            </article>
+            <article class="news-card">
+              <div class="news-content">
+                <p class="news-date">24 April 2026</p>
+                <h3 class="news-headline">Literature and Lab Visits</h3>
+                <p class="news-body">In order to get to the cutting edge of the industry, we reviewed the published literature on experimental atomic physics and visited labs across Europe to learn directly from the source. Special thanks to Dr. Florian Schreck and Dr. Dylan Sabulsky for the lab tours, and to Dr. Jekabs Romans and many other researchers at the Universities of Oxford and Cambridge, AQT, and Quantinuum for their ongoing correspondence.</p>
+              </div>
+              <div class="news-photo">
+                <img src="/images/news/lab-visits.jpg" alt="Trapped-ion laboratory equipment during a Continental lab visit" />
+              </div>
+            </article>
+            <article class="news-card">
+              <div class="news-content">
+                <p class="news-date">23 March 2026</p>
+                <h3 class="news-headline">Pathfinder Quantum Technologies Incorporated in UK</h3>
+                <p class="news-body">Pathfinder Quantum Technologies Ltd was registered as a private limited company with Companies House.</p>
+              </div>
+              <div class="news-photo">
+                <img src="/images/news/incorporation.jpg" alt="Joseph Wright, An Iron Forge" />
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <script src="/assets/heritage-hero.js"></script>
+</body>
+</html>

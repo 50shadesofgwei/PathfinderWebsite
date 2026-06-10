@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/images/Kasparov.jpeg" type="image/jpeg" />
+  <title>Pathfinder Quantum Technologies - Contact</title>
+  <script>
+    (function(){
+      try{
+        var saved = localStorage.getItem("theme");
+        var sys = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var theme = saved || sys || "dark";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      }catch(e){}
+    })();
+  </script>
+  <link rel="stylesheet" href="/assets/theme.css" />
+  <link rel="stylesheet" href="/assets/heritage-hero.css" />
+</head>
+<body class="page-with-backdrop">
+  <section class="heritage-page">
+    <div id="heritageHero" class="heritage-hero heritage-hero--backdrop" data-mode="backdrop" data-carousel="contact" aria-hidden="true">
+      <div class="heritage-hero__visual">
+        <div class="heritage-hero__slide heritage-hero__slide--a"></div>
+        <div class="heritage-hero__slide heritage-hero__slide--b"></div>
+        <div class="heritage-hero__tint"></div>
+        <div class="heritage-hero__scrim"></div>
+      </div>
+    </div>
+    <script src="/assets/heritage-boot.js"></script>
+
+    <header class="heritage-hero__header">
+      <h1>Pathfinder Quantum Technologies</h1>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a><span class="sep">&middot;</span>
+        <a href="mission.html">Mission</a><span class="sep">&middot;</span>
+        <a href="team.html">Team</a><span class="sep">&middot;</span>
+        <a href="news.html">News</a><span class="sep">&middot;</span>
+        <a href="contact.html" aria-current="page"><b>Contact</b></a>
+      </nav>
+    </header>
+
+    <div class="heritage-page__content">
+      <main>
+        <section>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="contact-form__field">
+              <label for="contactName">Name</label>
+              <input id="contactName" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="contactEmail">Email</label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="contact-form__field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="5" required></textarea>
+            </div>
+            <input type="text" name="_honey" class="contact-form__honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button type="submit" class="contact-form__submit">Send message</button>
+            <p id="contactStatus" class="contact-form__status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <script src="/assets/heritage-hero.js"></script>
+  <script src="/assets/contact.js"></script>
+</body>
+</html>
