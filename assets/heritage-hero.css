@@ -271,7 +271,8 @@ body.page-with-backdrop::before {
 }
 
 .heritage-page__content .contact-form textarea {
-  resize: vertical;
+  resize: none;
+  overflow-y: auto;
   min-height: 6.5rem;
 }
 

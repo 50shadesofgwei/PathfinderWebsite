@@ -26,7 +26,7 @@
           "image": "/images/heritage/Gathering.jpg",
           "color": "#503d2a",
           "placement": "top-right",
-          "text": "Claude Bernard built one of the first laboratories in Europe where medicine was conducted as experiment. He demonstrated that the body maintains a stable internal environment, later named homeostasis, and insisted that a physicians should apply a scientific rigour to their practice.\n\nHe turned physiology into a universal discipline; a generation of researchers followed his methods and went on to create fields that would become industries in their own right."
+          "text": "Claude Bernard built one of the first modern laboratories in Europe where medicine was conducted as experiment. He demonstrated that the body maintains a stable internal environment, later named homeostasis, and insisted that a physicians should apply a scientific rigour to their practice.\n\nHe turned physiology into a universal discipline; a generation of researchers followed his methods and went on to create fields that would become industries in their own right."
         },
         {
           "id": "faraday",
@@ -40,7 +40,7 @@
           "image": "/images/heritage/SteelWorks.jpg",
           "color": "#666666",
           "placement": "top-left",
-          "text": "The Bessemer converter, patented in 1856 in England, made cheap steel possible by blowing air through molten pig iron to burn away impurities. Entrepreneurs who adopted it built steelworks that poured metal from overhead ladles.\n\nThe arrival of cheap and high quality steel reshaped Europe's cities, railways, and shipyards; engineers could dream up and build designs that wrought iron alone could not support. Infrastructural plans that were previously unthinkable suddenly became feasible."
+          "text": "The Bessemer converter, patented in 1856 in England, made cheap steel possible by blowing air through molten pig iron to burn away impurities.\n\nThe arrival of cheap and high quality steel reshaped Europe's cities, railways, and shipyards; engineers could dream up and build designs that wrought iron alone could not support. Infrastructural plans that were previously unthinkable suddenly became feasible."
         },
         {
           "id": "apprentice",
@@ -54,7 +54,7 @@
           "image": "/images/heritage/BrunelNew.jpg",
           "color": "#544436",
           "placement": "top-right",
-          "text": "By 1857, Isambard Kingdom Brunel was leading development of the SS Great Eastern, a ship five times the carrying capacity of any vessel then afloat. He had already many times before staked his career on projects that others considered impossible.\n\nFrom the Great Western Railway to underwater tunneling and the suspension bridges, Brunel treated each venture as a problem in force, material, and nerve; he inspired the engineers who came after him to attempt projects of a scale earlier generations would not even have considered."
+          "text": "By 1857, Isambard Kingdom Brunel was leading development of the SS Great Eastern, a ship of five times the carrying capacity of any vessel then afloat. He had already many times before staked his career on projects that others considered impossible.\n\nFrom the Great Western Railway to underwater tunneling and the suspension bridges, Brunel treated each venture as a problem in force, material, and nerve; he inspired the engineers who came after him to attempt projects of a scale earlier generations would not even have considered."
         },
         {
           "id": "apothecary",
@@ -89,9 +89,9 @@
       "mode": "backdrop",
       "slides": [
         {
-          "id": "crystal-palace",
-          "image": "/images/heritage/GreatExhibition.jpg",
-          "color": "#9c9d9f"
+          "id": "contact",
+          "image": "/images/heritage/Contact1.jpg",
+          "color": "#312529"
         }
       ]
     }

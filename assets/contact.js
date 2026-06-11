@@ -4,7 +4,29 @@
 
   var statusEl = document.getElementById("contactStatus");
   var submitBtn = form.querySelector(".contact-form__submit");
+  var nameInput = form.querySelector('[name="name"]');
+  var emailInput = form.querySelector('[name="email"]');
+  var messageInput = form.querySelector('[name="message"]');
   var CONTACT_EMAIL = "jonathan@pathfinderquantum.com";
+
+  function isFormValid() {
+    return (
+      nameInput.value.trim() !== "" &&
+      emailInput.value.trim() !== "" &&
+      emailInput.checkValidity() &&
+      messageInput.value.trim() !== ""
+    );
+  }
+
+  function updateSubmitState() {
+    submitBtn.disabled = !isFormValid();
+  }
+
+  [nameInput, emailInput, messageInput].forEach(function (input) {
+    input.addEventListener("input", updateSubmitState);
+  });
+
+  updateSubmitState();
 
   function setStatus(message, isError) {
     if (!statusEl) return;
@@ -17,17 +39,18 @@
     event.preventDefault();
     setStatus("");
 
-    if (!form.checkValidity()) {
+    if (!isFormValid()) {
       form.reportValidity();
+      updateSubmitState();
       return;
     }
 
     var honey = form.querySelector('[name="_honey"]');
     if (honey && honey.value) return;
 
-    var name = form.name.value.trim();
-    var email = form.email.value.trim();
-    var message = form.message.value.trim();
+    var name = nameInput.value.trim();
+    var email = emailInput.value.trim();
+    var message = messageInput.value.trim();
 
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending…";
@@ -59,8 +82,8 @@
         setStatus("Something went wrong. Please try again or email jonathan@pathfinderquantum.com directly.", true);
       })
       .finally(function () {
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Send message";
+        submitBtn.textContent = "Send";
+        updateSubmitState();
       });
   });
 })();

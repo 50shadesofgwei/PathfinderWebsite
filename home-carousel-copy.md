@@ -30,7 +30,7 @@ What they were building was an attitude: that industrial skill and scientific cu
 - **Image:** `Gathering.jpg`
 - **Placement:** top-right
 
-Claude Bernard built one of the first laboratories in Europe where medicine was conducted as experiment. He demonstrated that the body maintains a stable internal environment, later named homeostasis, and insisted that a physicians should apply a scientific rigour to their practice.
+Claude Bernard built one of the first modern laboratories in Europe where medicine was conducted as experiment. He demonstrated that the body maintains a stable internal environment, later named homeostasis, and insisted that a physicians should apply a scientific rigour to their practice.
 
 He turned physiology into a universal discipline; a generation of researchers followed his methods and went on to create fields that would become industries in their own right.
 
@@ -54,7 +54,7 @@ Faraday's discoveries unlocked the ability to harness electricity on an industri
 - **Image:** `SteelWorks.jpg`
 - **Placement:** top-left
 
-The Bessemer converter, patented in 1856 in England, made cheap steel possible by blowing air through molten pig iron to burn away impurities. Entrepreneurs who adopted it built steelworks that poured metal from overhead ladles.
+The Bessemer converter, patented in 1856 in England, made cheap steel possible by blowing air through molten pig iron to burn away impurities.
 
 The arrival of cheap and high quality steel reshaped Europe's cities, railways, and shipyards; engineers could dream up and build designs that wrought iron alone could not support. Infrastructural plans that were previously unthinkable suddenly became feasible.
 
@@ -78,7 +78,7 @@ Post industrialisation, steam and steel still needed men formed over years in th
 - **Image:** `BrunelNew.jpg`
 - **Placement:** top-right
 
-By 1857, Isambard Kingdom Brunel was leading development of the SS Great Eastern, a ship five times the carrying capacity of any vessel then afloat. He had already many times before staked his career on projects that others considered impossible.
+By 1857, Isambard Kingdom Brunel was leading development of the SS Great Eastern, a ship of five times the carrying capacity of any vessel then afloat. He had already many times before staked his career on projects that others considered impossible.
 
 From the Great Western Railway to underwater tunneling and the suspension bridges, Brunel treated each venture as a problem in force, material, and nerve; he inspired the engineers who came after him to attempt projects of a scale earlier generations would not even have considered.
 
