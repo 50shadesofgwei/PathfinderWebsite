@@ -8,7 +8,7 @@ Home · Mission · Team · News · Contact
 
 ---
 
-## Carousel slides (11)
+## Carousel slides (8)
 
 Slides play in random order on the live site. Listed here in manifest order.
 
@@ -60,19 +60,7 @@ Faraday's discoveries unlocked the ability to harness electrical power on an ind
 
 ---
 
-### 5. Dr Luis Simarro
-
-- **ID:** `simarro`
-- **Image:** `Research.jpg`
-- **Placement:** bottom-right
-
-Dr Luis Simarro ran one of the first histology laboratories in Madrid where the nervous system was studied at the cellular level. New staining techniques made structures visible that had never been seen before, and colleagues gathered to learn the methods.
-
-His laboratory helped launch Santiago Ramón y Cajal, who would prove the brain consists of discrete cells, founding modern neuroscience. The spirit was entrepreneurial in the scientific sense: share techniques, train successors, build a field.
-
----
-
-### 6. Steel Pour
+### 5. Steel Pour
 
 - **ID:** `steel-pour`
 - **Image:** `SteelWorks.jpg`
@@ -84,19 +72,7 @@ The arrival of cheap and high quality steel reshaped Europe's cities, railways, 
 
 ---
 
-### 7. Smokestacks
-
-- **ID:** `smokestacks`
-- **Image:** `SteelWorks1.jpg`
-- **Placement:** bottom-left
-
-By the mid-nineteenth century, a hillside above any industrial town in Europe would show dozens of chimneys, each one a furnace, engine, or mill at work. Valleys filled with coal smoke because entrepreneurs kept betting on steam.
-
-This was thermodynamics turned into enterprise: converting fuel into work at scale, town by town, across the continent.
-
----
-
-### 8. The Apprentice
+### 6. The Apprentice
 
 - **ID:** `apprentice`
 - **Image:** `TheApprentice.jpg`
@@ -108,19 +84,19 @@ Post industrialisation, steam and steel still needed men formed over years in th
 
 ---
 
-### 9. Isambard Kingdom Brunel
+### 7. Isambard Kingdom Brunel
 
 - **ID:** `brunel`
 - **Image:** `BrunelNew.jpg`
 - **Placement:** top-right
 
-By 1857, Isambard Kingdom Brunel was building the SS Great Eastern at Millwall, a ship five times the tonnage of any vessel then afloat. He had already staked his career on projects that others considered impossible.
+By 1857, Isambard Kingdom Brunel was building the SS Great Eastern, a ship five times the tonnage of any vessel then afloat. He had already many times before staked his career on projects that others considered impossible.
 
-From the Great Western Railway to the Thames Tunnel and the Clifton Suspension Bridge, Brunel treated each venture as a problem in force, material, and nerve. The engineers who came after him attempted projects of a scale earlier generations would not have considered.
+From the Great Western Railway to underwater tunneling and the suspension bridges, Brunel treated each venture as a problem in force, material, and nerve. The engineers who came after him were led to attempt projects of a scale earlier generations would not have considered.
 
 ---
 
-### 10. Apothecary Laboratory
+### 8. Apothecary Laboratory
 
 - **ID:** `apothecary`
 - **Image:** `europeana__285_gam4192.jpg`
@@ -129,15 +105,3 @@ From the Great Western Railway to the Thames Tunnel and the Clifton Suspension B
 Before dedicated research institutes, much European science happened in rooms like this: apothecary shops where balances, glassware, and calibrated preparations turned chemical theory into measured practice.
 
 The pharmacist was part merchant, part experimenter. Knowledge was tested at the bench and sold across the counter.
-
----
-
-### 11. Warsaw Locksmith Workshop
-
-- **ID:** `zielezinski`
-- **Image:** `europeana__0940415__nn09S3R.jpg`
-- **Placement:** center-left
-
-In Warsaw, a locksmith workshop took on a major public commission, forging ornamental iron grates section by section, with dozens of craftsmen working at anvils simultaneously. This was how much of European metalwork was still organised in the nineteenth century: coordinated labour, not mass production lines.
-
-Workshops of this kind remained the backbone of urban industry well into the age of steam and steel, in places where design, metallurgy, and commerce met in a single room.

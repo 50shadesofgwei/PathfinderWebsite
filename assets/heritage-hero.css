@@ -88,7 +88,7 @@ body.page-with-backdrop::before {
   margin: 0;
   transform: translateX(-50%);
   padding: 1.1rem 1.35rem;
-  overflow: hidden;
+  overflow: visible;
   background: transparent;
 }
 
@@ -96,12 +96,24 @@ body.page-with-backdrop::before {
   content: "";
   position: absolute;
   inset: -0.35rem -0.45rem;
-  background: rgba(10, 8, 6, 0.55);
+  background: rgba(10, 8, 6, 0.95);
   border-radius: 2px;
   filter: blur(16px);
-  opacity: 0.9;
+  opacity: 1;
   z-index: -1;
   pointer-events: none;
+}
+
+.heritage-page__content main {
+  max-height: calc(100dvh - clamp(8.5rem, 20vh, 11rem) - 1.5rem - 2.2rem);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.heritage-page__content main::-webkit-scrollbar {
+  display: none;
 }
 
 .heritage-page__content main,
@@ -201,10 +213,13 @@ body.page-with-backdrop::before {
   right: auto;
   top: 50%;
   transform: translate(-50%, -50%);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow: visible;
   padding-bottom: 1.5rem;
   max-height: calc(100dvh - 2 * var(--spacing-lg));
+}
+
+.heritage-page__content:has(.contact-form) main {
+  max-height: calc(100dvh - 2 * var(--spacing-lg) - 2.6rem);
 }
 
 .heritage-page__content .contact-form {
@@ -311,40 +326,26 @@ body.page-with-backdrop::before {
 
 .heritage-page__content:has(.news-list) {
   width: min(38rem, calc(100% - 2 * var(--spacing-lg)));
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow: visible;
   padding-bottom: 1.35rem;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
 .page-mission .heritage-page__content {
   width: min(38rem, calc(100% - 2 * var(--spacing-lg)));
   top: clamp(8.5rem, 20vh, 11rem);
-  bottom: clamp(1rem, 3vh, 1.5rem);
-  max-height: none;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 1.35rem;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.page-mission .heritage-page__content::-webkit-scrollbar {
-  display: none;
+  bottom: auto;
+  max-height: calc(100dvh - clamp(8.5rem, 20vh, 11rem) - 1.5rem);
+  overflow: visible;
+  padding: 1.1rem 1.35rem;
 }
 
 .page-mission .heritage-page__content main {
-  font-size: clamp(1.08rem, 1.85vw, 1.4rem);
-  line-height: 1.48;
+  font-size: clamp(0.98rem, 1.55vw, 1.18rem);
+  line-height: 1.5;
 }
 
 .page-mission .heritage-page__content main p {
   margin: 0.5em 0;
-}
-
-.heritage-page__content:has(.news-list)::-webkit-scrollbar {
-  display: none;
 }
 
 .heritage-page__content:has(.news-list) .news-list {
@@ -394,42 +395,195 @@ body.page-with-backdrop::before {
 
 .heritage-page__content:has(.team-grid) {
   width: auto;
-  max-width: min(13.5rem, calc(100% - 2 * var(--spacing-lg)));
+  max-width: min(15.5rem, calc(100% - 2 * var(--spacing-lg)));
   padding: 0;
+  left: clamp(1.25rem, 4vw, 3rem);
+  right: auto;
+  transform: none;
+  transition: max-width 0.25s ease-in-out;
+}
+
+.heritage-page__content:has(.team-grid):has(.team-card.is-open) {
+  max-width: min(36rem, calc(100% - 2 * var(--spacing-lg)));
 }
 
 .heritage-page__content:has(.team-grid)::before {
   display: none;
 }
 
+.heritage-page:has(.team-grid) .heritage-hero--backdrop .heritage-hero__slide {
+  filter: brightness(0.6);
+}
+
 .heritage-page__content:has(.team-grid) .team-grid {
   margin-top: 0;
   display: block;
+  --team-photo-size: calc(15.5rem - 1.8rem);
 }
 
 .heritage-page__content:has(.team-grid) .team-card {
-  background: rgba(10, 8, 6, 0.62);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: none;
+  background: rgba(10, 8, 6, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
-  padding: 0.65rem 0.75rem 0.7rem;
+  padding: 0.8rem 0.9rem 0.85rem;
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.4);
+  transition:
+    padding 0.25s ease-in-out,
+    border-color 0.2s ease;
+}
+
+.heritage-page__content:has(.team-grid) .team-card:not(.is-open):hover {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.heritage-page__content:has(.team-grid) .team-card:not(.is-open):hover .team-photo {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.heritage-page__content:has(.team-grid) .team-card__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  border-bottom: 1px solid transparent;
+  transition:
+    margin 0.25s ease-in-out,
+    padding 0.25s ease-in-out,
+    border-color 0.25s ease-in-out;
+}
+
+.heritage-page__content:has(.team-grid) .team-photo {
+  display: block;
+  width: var(--team-photo-size);
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: border-color 0.2s ease;
+}
+
+.heritage-page__content:has(.team-grid) .team-card.is-open {
+  padding-top: 0;
+}
+
+.heritage-page__content:has(.team-grid) .team-card.is-open .team-card__banner {
+  margin: 0 -0.9rem 0.65rem;
+  padding: 0.8rem 0.9rem;
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.heritage-page__content:has(.team-grid) .team-card__trigger {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.heritage-page__content:has(.team-grid) .team-card__trigger:hover .team-name {
+  color: #fff;
+}
+
+.heritage-page__content:has(.team-grid) .team-card__trigger:hover .team-role {
+  color: rgba(248, 244, 236, 0.9);
+}
+
+.heritage-page__content:has(.team-grid) .team-card__trigger::after {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: "Cormorant Garamond", "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(248, 244, 236, 0.42);
+  transition: color 0.2s ease;
+}
+
+.heritage-page__content:has(.team-grid) .team-card:not(.is-open) .team-card__trigger::after {
+  content: "Bio ↓";
+}
+
+.heritage-page__content:has(.team-grid) .team-card.is-open .team-card__trigger::after {
+  content: "Close ↑";
+}
+
+.heritage-page__content:has(.team-grid) .team-card__trigger:hover::after {
+  color: rgba(248, 244, 236, 0.78);
+}
+
+.heritage-page__content:has(.team-grid) .team-card__trigger:focus-visible {
+  outline: 2px solid rgba(248, 244, 236, 0.45);
+  outline-offset: 3px;
 }
 
 .heritage-page__content:has(.team-grid) .team-name {
-  font-size: 1.05rem;
+  display: block;
+  font-size: 1.2rem;
   line-height: 1.2;
-  margin: 0.45rem 0 0.1rem;
+  margin: 0.5rem 0 0.15rem;
   font-weight: 600;
+  color: #f8f4ec;
 }
 
 .heritage-page__content:has(.team-grid) .team-role {
-  font-size: 0.8rem;
+  display: block;
+  font-size: 0.95rem;
   line-height: 1.2;
   margin: 0;
   font-weight: 500;
   letter-spacing: 0.02em;
+  color: rgba(248, 244, 236, 0.72);
+}
+
+.heritage-page__content:has(.team-grid) .team-bio {
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.heritage-page__content:has(.team-grid) .team-card.is-open .team-bio {
+  max-height: 24rem;
+  pointer-events: auto;
+}
+
+.heritage-page__content:has(.team-grid) .team-bio__inner {
+  padding-top: 0.75rem;
+}
+
+.heritage-page__content:has(.team-grid) .team-bio p {
+  margin: 0;
+  font-family: "Cormorant Garamond", "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: clamp(0.92rem, 1.45vw, 1.05rem);
+  line-height: 1.5;
+  font-weight: 500;
+  color: #f8f4ec;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.9),
+    0 2px 12px rgba(0, 0, 0, 0.65);
+}
+
+.heritage-page__content:has(.team-grid) .team-bio p + p {
+  margin-top: 0.65em;
+}
+
+.heritage-page__content:has(.team-grid) .team-bio a {
+  color: #e8e4ff;
+  border-bottom: 1px solid rgba(232, 228, 255, 0.45);
+  text-decoration: none;
+}
+
+.heritage-page__content:has(.team-grid) .team-bio a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 .heritage-hero {
@@ -454,12 +608,20 @@ body.page-with-backdrop::before {
 .heritage-hero__slide {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 2.4s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   will-change: opacity;
+}
+
+.heritage-hero__slide:not([data-fit="portrait"]) {
+  background-size: cover;
+  background-position: center;
+}
+
+.heritage-hero__slide[data-fit="portrait"] {
+  background-size: contain !important;
+  background-position: center center !important;
 }
 
 .heritage-hero__slide.is-visible {
@@ -604,7 +766,7 @@ body.page-with-backdrop::before {
   content: "";
   position: absolute;
   inset: -1.1rem -1.4rem;
-  background: rgba(10, 8, 6, 0.62);
+  background: rgba(10, 8, 6, 0.95);
   border-radius: 2px;
   filter: blur(18px);
   opacity: 0.92;
@@ -618,8 +780,8 @@ body.page-with-backdrop::before {
 .heritage-hero__text {
   position: relative;
   font-family: "Cormorant Garamond", "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: clamp(1.2rem, 2.1vw, 1.55rem);
-  line-height: 1.55;
+  font-size: clamp(0.98rem, 1.55vw, 1.18rem);
+  line-height: 1.5;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0.015em;
@@ -665,12 +827,28 @@ body.page-with-backdrop::before {
   .heritage-hero__text .heritage-cursor {
     display: none;
   }
+
+  .heritage-page__content:has(.team-grid) .team-card__banner,
+  .heritage-page__content:has(.team-grid) .team-bio,
+  .heritage-page__content:has(.team-grid) {
+    transition: none;
+  }
 }
 
 @media (max-width: 720px) {
   .heritage-page__content main {
     font-size: clamp(1.05rem, 4.2vw, 1.35rem);
     line-height: 1.45;
+  }
+
+  .page-mission .heritage-page__content main {
+    font-size: clamp(0.92rem, 3.8vw, 1.08rem);
+    line-height: 1.48;
+  }
+
+  .heritage-hero__text {
+    font-size: clamp(0.92rem, 3.8vw, 1.08rem);
+    line-height: 1.48;
   }
 
   .heritage-page__content main p {

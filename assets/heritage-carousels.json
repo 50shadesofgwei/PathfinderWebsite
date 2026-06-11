@@ -37,17 +37,10 @@
         },
         {
           "id": "faraday",
-          "image": "/images/heritage/faraday.jpg",
+          "image": "/images/heritage/Faradayv2.png",
           "color": "#4b4b4b",
           "placement": "bottom-left",
           "text": "In 1831, in the basement of the Royal Institution, Michael Faraday discovered that an electric current could be driven using only a coil and a magnetic field. Although he had little formal training, the discoveries he made would lead to the development of the modern electrical grid.\n\nFaraday's discoveries unlocked the ability to harness electrical power on an industrial scale, and was a key stepping stone on the path to modern technological society."
-        },
-        {
-          "id": "simarro",
-          "image": "/images/heritage/Research.jpg",
-          "color": "#69553e",
-          "placement": "bottom-right",
-          "text": "Dr Luis Simarro ran one of the first histology laboratories in Madrid where the nervous system was studied at the cellular level. New staining techniques made structures visible that had never been seen before, and colleagues gathered to learn the methods.\n\nHis laboratory helped launch Santiago Ram\u00f3n y Cajal, who would prove the brain consists of discrete cells, founding modern neuroscience. The spirit was entrepreneurial in the scientific sense: share techniques, train successors, build a field."
         },
         {
           "id": "steel-pour",
@@ -55,13 +48,6 @@
           "color": "#666666",
           "placement": "top-left",
           "text": "The Bessemer converter, patented in 1856 in England, made cheap steel possible by blowing air through molten pig iron to burn away impurities. Entrepreneurs who adopted it built steelworks that poured metal from overhead ladles.\n\nThe arrival of cheap and high quality steel reshaped Europe's cities, railways, and shipyards; engineers could dream up and build designs that wrought iron alone could not support. Previously unthinkable infrastructural plans suddenly became feasible."
-        },
-        {
-          "id": "smokestacks",
-          "image": "/images/heritage/SteelWorks1.jpg",
-          "color": "#5c564b",
-          "placement": "bottom-left",
-          "text": "By the mid-nineteenth century, a hillside above any industrial town in Europe would show dozens of chimneys, each one a furnace, engine, or mill at work. Valleys filled with coal smoke because entrepreneurs kept betting on steam.\n\nThis was thermodynamics turned into enterprise: converting fuel into work at scale, town by town, across the continent."
         },
         {
           "id": "apprentice",
@@ -83,13 +69,6 @@
           "color": "#404040",
           "placement": "bottom-right",
           "text": "Before dedicated research institutes, much European science happened in rooms like this: apothecary shops where balances, glassware, and calibrated preparations turned chemical theory into measured practice.\n\nThe pharmacist was part merchant, part experimenter. Knowledge was tested at the bench and sold across the counter."
-        },
-        {
-          "id": "zielezinski",
-          "image": "/images/heritage/europeana__0940415__nn09S3R.jpg",
-          "color": "#7e786d",
-          "placement": "center-left",
-          "text": "In Warsaw, a locksmith workshop took on a major public commission, forging ornamental iron grates section by section, with dozens of craftsmen working at anvils simultaneously. This was how much of European metalwork was still organised in the nineteenth century: coordinated labour, not mass production lines.\n\nWorkshops of this kind remained the backbone of urban industry well into the age of steam and steel, in places where design, metallurgy, and commerce met in a single room."
         }
       ]
     },
@@ -98,8 +77,8 @@
       "slides": [
         {
           "id": "team",
-          "image": "/images/Team.jpg",
-          "color": "#7a746f"
+          "image": "/images/Team2.jpg",
+          "color": "#3f3128"
         }
       ]
     },

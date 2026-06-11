@@ -48,9 +48,19 @@
         <section>
           <div class="team-grid">
             <article class="team-card">
-              <img class="team-photo" src="/header.jpg" alt="Photo of Jonathan Feasby" />
-              <h3 class="team-name">Jonathan Feasby</h3>
-              <p class="team-role">Founder</p>
+              <button type="button" class="team-card__trigger" aria-expanded="false" aria-controls="team-bio-jonathan" aria-label="Jonathan Feasby, Founder. Bio.">
+                <div class="team-card__banner">
+                  <img class="team-photo" src="/header.jpg" alt="Photo of Jonathan Feasby" />
+                </div>
+                <span class="team-name">Jonathan Feasby</span>
+                <span class="team-role">Founder</span>
+              </button>
+              <div id="team-bio-jonathan" class="team-bio" aria-hidden="true">
+                <div class="team-bio__inner">
+                  <p>Jonathan dropped out of university in 2021 to work on arbitrage strategies with a team of experienced programmatic traders at what is now <a href="https://www.smg.org/" target="_blank" rel="noopener noreferrer">Special Mechanisms Group</a>. He later started programming <a href="https://github.com/50shadesofgwei/funding-rate-arbitrage" target="_blank" rel="noopener noreferrer">trading bots</a> alone while living in South America, and was awarded just shy of $100k in grants from organisations such as <a href="https://gmx.io/" target="_blank" rel="noopener noreferrer">GMX</a> and <a href="https://www.synthetix.io/" target="_blank" rel="noopener noreferrer">Synthetix</a> throughout late 2023 and early 2024, before raising $1m of capital to start a private trading organisation.</p>
+                  <p>Outside work, he reached the top 0.2% of players worldwide in rapid chess, enjoys playing the guitar, and speaks both Spanish and Russian.</p>
+                </div>
+              </div>
             </article>
           </div>
         </section>
@@ -59,5 +69,6 @@
   </section>
 
   <script src="/assets/heritage-hero.js"></script>
+  <script src="/assets/team.js"></script>
 </body>
 </html>

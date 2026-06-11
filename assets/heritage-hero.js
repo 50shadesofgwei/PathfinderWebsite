@@ -169,11 +169,36 @@
     caption.classList.toggle("is-fading", !show);
   }
 
+  function slideBackgroundStyle(slide) {
+    if (slide.backgroundFit === "portrait") {
+      return {
+        size: "contain",
+        position: slide.backgroundPosition || "center center"
+      };
+    }
+
+    return {
+      size: slide.backgroundSize || "cover",
+      position: slide.backgroundPosition || "center"
+    };
+  }
+
+  function applySlideBackground(el, slide) {
+    var bg = slideBackgroundStyle(slide);
+    el.style.background = "url(" + slide.image + ") " + bg.position + " / " + bg.size + " no-repeat";
+    el.dataset.fit = slide.backgroundFit || "cover";
+  }
+
+  function clearSlideBackground(el) {
+    el.style.background = "";
+    el.dataset.fit = "";
+  }
+
   function crossfadeTo(slide) {
     return new Promise(function (resolve) {
       var layers = layerEls();
       var fromTint = currentTint;
-      layers.hidden.style.backgroundImage = "url(" + slide.image + ")";
+      applySlideBackground(layers.hidden, slide);
       void layers.hidden.offsetWidth;
       layers.visible.classList.remove("is-visible");
       layers.hidden.classList.add("is-visible");
@@ -319,10 +344,10 @@
 
     activeLayer = "a";
     slideA.style.transition = "";
-    slideA.style.backgroundImage = "url(" + bootSlide.image + ")";
+    applySlideBackground(slideA, bootSlide);
     slideA.classList.add("is-visible");
     slideB.classList.remove("is-visible");
-    slideB.style.backgroundImage = "";
+    clearSlideBackground(slideB);
     setTint(bootSlide.color, tintOpacity);
     if (!isBackdrop) setPlacement(bootSlide);
     hero.removeAttribute("data-booted");
@@ -342,7 +367,7 @@
     order = shuffle(slides);
     index = 0;
     var first = order[0];
-    slideA.style.backgroundImage = "url(" + first.image + ")";
+    applySlideBackground(slideA, first);
     slideA.classList.add("is-visible");
     setTint(first.color, tintOpacity);
     if (!isBackdrop) setPlacement(first);
