@@ -868,6 +868,10 @@ body.page-with-backdrop::before {
 }
 
 @media (max-width: 720px) {
+  :root {
+    --heritage-mobile-header: clamp(11rem, 30vh, 13.5rem);
+  }
+
   .heritage-page__content main {
     font-size: clamp(1.05rem, 4.2vw, 1.35rem);
     line-height: 1.45;
@@ -888,7 +892,59 @@ body.page-with-backdrop::before {
   }
 
   .heritage-hero__header {
-    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.82) 75%,
+      rgba(0, 0, 0, 0.45) 100%
+    );
+  }
+
+  .heritage-page:has(.news-list) .heritage-hero__header,
+  .heritage-page:has(.contact-form) .heritage-hero__header {
+    background: transparent;
+  }
+
+  .heritage-hero__header h1 {
+    font-size: clamp(1.45rem, 6.5vw, 1.75rem);
+    line-height: 1.15;
+    margin-bottom: 0.45rem;
+  }
+
+  .heritage-hero__header .nav {
+    font-size: clamp(0.95rem, 3.6vw, 1.1rem);
+    line-height: 1.45;
+  }
+
+  .heritage-page__content:not(:has(.contact-form)) {
+    top: var(--heritage-mobile-header);
+    max-height: calc(100dvh - var(--heritage-mobile-header) - 1.5rem);
+  }
+
+  .heritage-page__content:not(:has(.contact-form)) main {
+    max-height: calc(100dvh - var(--heritage-mobile-header) - 1.5rem - 2.2rem);
+  }
+
+  .page-mission .heritage-page__content {
+    top: var(--heritage-mobile-header);
+    max-height: calc(100dvh - var(--heritage-mobile-header) - 1.5rem);
+  }
+
+  .page-mission .heritage-page__content main {
+    max-height: calc(100dvh - var(--heritage-mobile-header) - 1.5rem - 2.2rem);
+  }
+
+  .heritage-page__content:has(.contact-form) {
+    top: var(--heritage-mobile-header);
+    bottom: 1.5rem;
+    transform: translateX(-50%);
+    max-height: calc(100dvh - var(--heritage-mobile-header) - 1.5rem);
+    overflow-y: auto;
+  }
+
+  .heritage-page__content:has(.contact-form) main {
+    max-height: none;
   }
 
   .heritage-hero__caption {
@@ -900,20 +956,12 @@ body.page-with-backdrop::before {
   }
 
   .heritage-hero__caption[data-placement="top-left"],
-  .heritage-hero__caption[data-placement="top-right"] {
-    top: clamp(4.75rem, 12vh, 6.5rem);
-    bottom: auto;
-  }
-
+  .heritage-hero__caption[data-placement="top-right"],
   .heritage-hero__caption[data-placement="center-left"],
-  .heritage-hero__caption[data-placement="center-right"] {
-    top: auto;
-    bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
-  }
-
+  .heritage-hero__caption[data-placement="center-right"],
   .heritage-hero__caption[data-placement="bottom-left"],
   .heritage-hero__caption[data-placement="bottom-right"] {
     top: auto;
-    bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+    bottom: calc(1.75rem + env(safe-area-inset-bottom, 0px));
   }
 }
