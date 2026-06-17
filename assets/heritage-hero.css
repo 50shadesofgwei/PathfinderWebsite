@@ -355,18 +355,9 @@ body.page-with-backdrop::before {
   pointer-events: none;
 }
 
-.heritage-page:has(.news-list) .heritage-hero__header::before {
-  background: rgba(10, 8, 6, 0.368);
-}
-
 .heritage-page:has(.news-list) .heritage-hero__header h1,
 .heritage-page:has(.news-list) .heritage-hero__header .nav a,
-.heritage-page:has(.news-list) .heritage-hero__header .nav .sep {
-  text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.76),
-    0 2px 12px rgba(0, 0, 0, 0.6);
-}
-
+.heritage-page:has(.news-list) .heritage-hero__header .nav .sep,
 .heritage-page:has(.contact-form) .heritage-hero__header h1,
 .heritage-page:has(.contact-form) .heritage-hero__header .nav a,
 .heritage-page:has(.contact-form) .heritage-hero__header .nav .sep {
