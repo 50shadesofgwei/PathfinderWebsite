@@ -40,6 +40,46 @@ body.page-with-backdrop::before {
   display: none;
 }
 
+html:has(body.page-cofounders),
+body.page-cofounders {
+  overflow: auto;
+  height: auto;
+  min-height: 100%;
+  overscroll-behavior: auto;
+  background: #000 !important;
+  background-image: none !important;
+}
+
+body.page-cofounders::before {
+  display: none;
+}
+
+.page-cofounders .heritage-page {
+  min-height: 100dvh;
+  height: auto;
+  overflow: visible;
+}
+
+.page-cofounders .heritage-hero__header {
+  background: transparent;
+}
+
+.page-cofounders .heritage-page__content::before {
+  display: none;
+}
+
+.page-cofounders .cofounders-figure {
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.page-cofounders .cofounders-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
 .heritage-page {
   position: relative;
   height: 100vh;
