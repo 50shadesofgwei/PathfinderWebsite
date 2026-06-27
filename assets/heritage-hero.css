@@ -40,8 +40,8 @@ body.page-with-backdrop::before {
   display: none;
 }
 
-html:has(body.page-cofounders),
-body.page-cofounders {
+html:has(body.page-careers),
+body.page-careers {
   overflow: auto;
   height: auto;
   min-height: 100%;
@@ -50,30 +50,30 @@ body.page-cofounders {
   background-image: none !important;
 }
 
-body.page-cofounders::before {
+body.page-careers::before {
   display: none;
 }
 
-.page-cofounders .heritage-page {
+.page-careers .heritage-page {
   min-height: 100dvh;
   height: auto;
   overflow: visible;
 }
 
-.page-cofounders .heritage-hero__header {
+.page-careers .heritage-hero__header {
   background: transparent;
 }
 
-.page-cofounders .heritage-page__content::before {
+.page-careers .heritage-page__content::before {
   display: none;
 }
 
-.page-cofounders .cofounders-figure {
+.page-careers .careers-figure {
   margin: 0 0 1rem;
   padding: 0;
 }
 
-.page-cofounders .cofounders-figure img {
+.page-careers .careers-figure img {
   display: block;
   width: 100%;
   height: auto;

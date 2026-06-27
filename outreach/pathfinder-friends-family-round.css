@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap");
+
+@page {
+  size: A4;
+  margin: 22mm 24mm 26mm 24mm;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --text: #f0f0f0;
+  --muted: #9a9a9a;
+  --silver: #c8c8c8;
+  --silver-dim: #7a7a7a;
+  --metallic: linear-gradient(135deg, #f5f5f5 0%, #b8b8b8 45%, #e0e0e0 70%, #909090 100%);
+  --rule: linear-gradient(90deg, transparent, #666 20%, #c0c0c0 50%, #666 80%, transparent);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 11pt;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 0 0 28px;
+  background: var(--metallic);
+  border-radius: 2px;
+}
+
+body::after {
+  content: "Pathfinder Quantum Technologies  ·  Confidential";
+  display: block;
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid #2a2a2a;
+  font-family: "Inter", sans-serif;
+  font-size: 8pt;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--silver-dim);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2.35rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  margin: 0 0 8px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #2a2a2a;
+  background: var(--metallic);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1::after {
+  content: "Investment overview";
+  display: block;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  -webkit-text-fill-color: var(--silver-dim);
+  background: none;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 14px;
+  color: var(--silver);
+  letter-spacing: 0.02em;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin-top: 8px;
+  background: var(--metallic);
+  border-radius: 1px;
+}
+
+p {
+  margin: 0 0 14px;
+  color: #d8d8d8;
+  max-width: 42em;
+}
+
+strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  margin: 28px 0;
+  background: var(--rule);
+}
+
+ul {
+  margin: 0 0 14px;
+  padding: 0 0 0 1.1em;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 0.35em;
+  color: #d0d0d0;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: -1.1em;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e8e8e8, #888);
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Section spacing after horizontal rules */
+hr + h2 {
+  margin-top: 4px;
+}
+
+/* Keep section groups from splitting awkwardly */
+h2,
+h2 + p,
+h2 + ul {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+h2 {
+  break-after: avoid;
+  page-break-after: avoid;
+}

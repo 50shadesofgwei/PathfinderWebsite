@@ -8,7 +8,7 @@ Home · Mission · Team · News · Contact
 
 ---
 
-## Carousel slides (7)
+## Carousel slides (9)
 
 Slides play in random order on the live site. Listed here in manifest order.
 
@@ -93,3 +93,26 @@ From the Great Western Railway to underwater tunneling and the suspension bridge
 Before dedicated research institutes, much European science happened in rooms like this: apothecary shops where balances, glassware, and calibrated preparations were turned into information and medicine.
 
 The pharmacist was part merchant, part experimenter; knowledge was tested at the bench and sold across the counter.
+
+---
+
+### 8. The Traitorous Eight
+
+- **ID:** `traitorous-eight`
+- **Image:** `the8.jpg`
+- **Placement:** top-left
+
+In 1957, eight researchers left William Shockley's semiconductor laboratory in California and were branded the 'Traitorous Eight' by their former boss. Shockley won the Nobel Prize in physics for his work on the transistor, but his abrasive personality made him impossible to work with; the eight, including Bob Noyce and Gordon Moore (after whom Moore's Law is named), set out to found a new enterprise on their own terms.
+
+They founded Fairchild Semiconductor and developed the planar process that made mircrochips widely manufacturable. Fairchild, Intel, and dozens of other spinouts helped turn a plot of orchards in the San Fransisco Bay Area into Silicon Valley.
+
+---
+
+### 9. Robert Noyce
+
+- **ID:** `noyce`
+- **Image:** `Noyce.png`
+- **Placement:** top-left
+
+In 1959, Robert Noyce at Fairchild Semiconductor integrated multiple transistors onto a single silicon chip and in so doing cracked the wiring problem that had rendered earlier circuits impractical. Built on the manufacturing processes developed in his lab, the integrated circuit (or "microchip", as it became known) made all of modern technology possible. 
+Noyce later co-founded Intel with Gordon Moore and continued to define the cowboy culture of early Silicon Valley, later going on to mentor a young Steve Jobs.
