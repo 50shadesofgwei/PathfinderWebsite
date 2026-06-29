@@ -74,6 +74,7 @@
           "id": "noyce",
           "image": "/images/heritage/Noyce.png",
           "color": "#3d3530",
+          "backgroundPosition": "top right",
           "placement": "top-left",
           "text": "In 1959, Robert Noyce at Fairchild Semiconductor integrated multiple transistors onto a single silicon chip and in so doing cracked the wiring problem that had rendered earlier circuits impractical. Built on the manufacturing processes developed in his lab, the integrated circuit (or \"microchip\", as it became known) made all of modern technology possible.\n\nNoyce later co-founded Intel with Gordon Moore and continued to define the cowboy culture of early Silicon Valley, later going on to mentor a young Steve Jobs."
         }
